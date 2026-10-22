@@ -1,0 +1,14 @@
+class IPad:
+    def __init__(self,model):
+        self.model=model
+
+class User:
+    def __init__(self,name):
+        self.name=name
+        
+    def use_ipad(self):
+        ipad = IPad("iPad Pro 3rd Generation")
+        print(f"{self.name} is using {ipad.model}")
+        
+user1 = User("Livia")
+user1.use_ipad()

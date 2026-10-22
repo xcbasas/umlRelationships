@@ -1,0 +1,13 @@
+class Mom:
+    def __init__(self,name):
+        self.name=name
+        self.friends=[]
+        
+class Friend:
+    def __init__(self,name_friend):
+        self.name=name_friend
+
+mom1 = Mom("Mrai")
+friend1 = Friend("Glanz")
+mom1.friends.append(friend1)
+print(mom1.friends[0].name)

@@ -1,0 +1,10 @@
+class Shape:
+    def draw(self):
+        pass
+    
+class Drawing(Shape):
+    def draw(self):
+        print("Drawing shape")
+
+drawing1 = Drawing()
+drawing1.draw()
