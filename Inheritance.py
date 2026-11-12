@@ -1,0 +1,13 @@
+class Person:
+    def __init__ (self, name, age):
+        self.name=name
+        self.age=age
+class Student(Person):
+    def show_name (self, name):
+        print(f"My name is {name}")
+    def show_age (self, age):
+        print(f"I am {age} years old")
+        
+person1 = Student("Annabelle",10)
+person1.show_name("Annabelle")
+person1.show_age(10)

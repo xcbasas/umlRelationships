@@ -1,0 +1,14 @@
+class Pastime:
+    def __init__(self,hobby):
+        self.hobby=hobby
+        
+class Person:
+    def __init__(self):
+        self.person = [Pastime("Crocheting"), Pastime("Texting")]
+        
+    def show_hobby(self):
+        for hobby in self.person:
+            print(hobby.hobby)
+            
+person1 = Person()
+person1.show_hobby()

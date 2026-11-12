@@ -1,0 +1,13 @@
+class Subject:
+    def __init__(self,code):
+        self.code=code
+        
+class Teacher:
+    def __init__(self, name ,subject):
+        self.name=name
+        self.subject=subject
+subject1 = Subject("12CHEMISTRY06")
+teacher1 = Teacher("Mrs. Mrai", subject1)
+
+print(teacher1.name)
+print(teacher1.subject.code)
