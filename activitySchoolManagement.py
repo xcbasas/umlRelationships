@@ -16,9 +16,22 @@ class Student(Person):
         super().__init__(name, age)
 
     def study(self):
-        print(f"{self.name} is studying.")
+        print(f"{self.name} is studying")
+
+class Teacher(Person):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def teach(self):
+        print(f"{self.name} is teaching")
 
 student1 = Student("Xianne", 14)
 print(student1.get_name())
 print(student1.get_age())
 student1.study()
+
+
+teacher1 = Teacher("Ms. Moira", 30)
+print(f"\n{teacher1.get_name()}")
+print(teacher1.get_age())
+teacher1.teach()
