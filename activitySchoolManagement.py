@@ -9,6 +9,16 @@ class Person:
     def get_age(self):
         return f"Age: {self.__age}"
 
-person1 = Person("Xianne", 14)
-print(person1.get_name())
-print(person1.get_age())
+#get_age can access the private attribute __age.
+
+class Student(Person):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def study(self):
+        print(f"{self.name} is studying.")
+
+student1 = Student("Xianne", 14)
+print(student1.get_name())
+print(student1.get_age())
+student1.study()
